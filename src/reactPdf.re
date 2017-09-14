@@ -5,6 +5,7 @@ module Core = {
   module View = ReactPdfView;
   module Document = ReactPdfDocument;
   module Image = ReactPdfImage;
+  module Link = ReactPdfLink;
 };
 
 module Node = ReactPdfNode;
