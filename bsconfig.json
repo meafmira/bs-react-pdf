@@ -1,0 +1,16 @@
+{
+  "name": "bs-react-pdf",
+  "sources": [
+    "src"
+  ],
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ],
+  "reason": {
+    "react-jsx": 2
+  }
+}
