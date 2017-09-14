@@ -1,7 +1,31 @@
 {
   "name": "bs-react-pdf",
+  "package-specs": [
+    "amdjs",
+    "es6",
+    "commonjs"
+  ],
   "sources": [
-    "src"
+    {
+      "dir": "src",
+      "subdirs": [
+        {
+          "dir": "core",
+          "public": [
+            "ReactPdfCore"
+          ]
+        },
+        {
+          "dir": "node"
+        }
+      ],
+      "public": [
+        "ReactPdf"
+      ]
+    },
+    {
+      "dir": "examples"
+    }
   ],
   "bs-dependencies": [
     "reason-react"
