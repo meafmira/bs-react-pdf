@@ -10,19 +10,11 @@
       "dir": "src",
       "subdirs": [
         {
-          "dir": "core",
-          "public": [
-            "ReactPdfCore"
-          ]
+          "dir": "core"
         },
         {
           "dir": "node"
         }
-      ],
-      "public": [
-        "ReactPdf",
-        "Core",
-        "Node"
       ]
     },
     {

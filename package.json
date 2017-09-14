@@ -1,6 +1,6 @@
 {
   "name": "bs-react-pdf",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "react-pdf bindings for bucklescript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
