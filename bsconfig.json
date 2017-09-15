@@ -16,9 +16,6 @@
           "dir": "node"
         }
       ]
-    },
-    {
-      "dir": "examples"
     }
   ],
   "bs-dependencies": [
