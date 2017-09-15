@@ -1,4 +1,3 @@
 external document : ReasonReact.reactClass = "Document" [@@bs.module "@react-pdf/core"];
 
-let make children =>
-  ReasonReact.wrapJsForReason reactClass::document props::(Js.Obj.empty ()) children;
+let make ::style=(Js.Obj.empty ()) => ReactPdfCommon.make document (Js.Obj.empty ()) ::style;

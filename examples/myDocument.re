@@ -15,7 +15,7 @@ let make _children => {
     <Document>
       <Page size="A4" style=styles##page>
         <View style=styles##section>
-          <Text> (ReasonReact.stringToElement "Section #1") </Text>
+          <Text key="hello"> (ReasonReact.stringToElement "Section #1") </Text>
         </View>
         <View style=styles##section>
           <Text> (ReasonReact.stringToElement "Section #2") </Text>
