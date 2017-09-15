@@ -1,4 +1,4 @@
 external text : ReasonReact.reactClass = "Text" [@@bs.module "@react-pdf/core"];
 
-let make children =>
-  ReasonReact.wrapJsForReason reactClass::text props::(Js.Obj.empty ()) children;
+let make ::style=(Js.Obj.empty ()) children =>
+  ReasonReact.wrapJsForReason reactClass::text props::{"style": style} children;
