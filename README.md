@@ -1,4 +1,4 @@
-# bs-react-pdf
+# bs-react-pdf [![npm version](https://img.shields.io/npm/v/bs-react-pdf.svg?style=flat-square)](https://www.npmjs.com/package/bs-react-pdf)
 
 [react-pdf](https://github.com/diegomura/react-pdf) bindings for [bucklescript](https://bucklescript.github.io/bucklescript/)
 
