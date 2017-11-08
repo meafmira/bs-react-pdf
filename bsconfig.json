@@ -16,6 +16,9 @@
           "dir": "node"
         }
       ]
+    },
+    {
+      "dir": "examples"
     }
   ],
   "bs-dependencies": [
@@ -27,5 +30,6 @@
   ],
   "reason": {
     "react-jsx": 2
-  }
+  },
+  "refmt": 3
 }

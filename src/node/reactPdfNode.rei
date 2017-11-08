@@ -1,1 +1,1 @@
-let render: ReasonReact.reactElement => string => Js.Promise.t unit;
+let render: (ReasonReact.reactElement, string) => Js.Promise.t(unit);

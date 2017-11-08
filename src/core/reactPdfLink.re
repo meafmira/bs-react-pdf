@@ -1,3 +1,3 @@
-external link : ReasonReact.reactClass = "Link" [@@bs.module "@react-pdf/core"];
+[@bs.module "@react-pdf/core"] external link : ReasonReact.reactClass = "Link";
 
-let make src::(src: string) => ReactPdfCommon.make link {"src": src};
+let make = (~src: string) => ReactPdfCommon.make(link, {"src": src});

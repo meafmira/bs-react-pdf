@@ -1,3 +1,3 @@
-external image : ReasonReact.reactClass = "Image" [@@bs.module "@react-pdf/core"];
+[@bs.module "@react-pdf/core"] external image : ReasonReact.reactClass = "Image";
 
-let make src::(src: string) => ReactPdfCommon.make image {"src": src};
+let make = (~src: string) => ReactPdfCommon.make(image, {"src": src});

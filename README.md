@@ -10,28 +10,28 @@
 ## [Examples](https://github.com/meafmira/bs-react-pdf/tree/master/examples)
 ### Document
 
-```
+```reason
 open ReactPdf.Core;
 
 let styles =
-  StyleSheet.create {
+  StyleSheet.create({
     "page": {"flexDirection": "row", "backgroundColor": "#fff"},
     "section": {"margin": 10, "padding": 10, "flexGrow": 1}
-  };
+  });
 
-let component = ReasonReact.reducerComponent "MyDocument";
+let component = ReasonReact.reducerComponent("MyDocument");
 
-let make _children => {
+let make = (_children) => {
   ...component,
-  reducer: fun () (_state: unit) => ReasonReact.NoUpdate,
-  render: fun _self =>
+  reducer: ((), _state: unit) => ReasonReact.NoUpdate,
+  render: (_self) =>
     <Document>
       <Page size="A4" style=styles##page>
         <View style=styles##section>
-          <Text> (ReasonReact.stringToElement "Section #1") </Text>
+          <Text key="hello"> (ReasonReact.stringToElement("Section #1")) </Text>
         </View>
         <View style=styles##section>
-          <Text> (ReasonReact.stringToElement "Section #2") </Text>
+          <Text> (ReasonReact.stringToElement("Section #2")) </Text>
         </View>
       </Page>
     </Document>
@@ -40,7 +40,7 @@ let make _children => {
 
 ### Save in a file
 
-```
+```reason
 ReactPdfNode.render <MyDocument /> "example.pdf" |>
 Js.Promise.then_ (fun () => Js.Promise.resolve @@ Js.log "Pdf created");
 ```
