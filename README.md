@@ -41,6 +41,6 @@ let make = (_children) => {
 ### Save in a file
 
 ```reason
-ReactPdfNode.render <MyDocument /> "example.pdf" |>
-Js.Promise.then_ (fun () => Js.Promise.resolve @@ Js.log "Pdf created");
+ReactPdfNode.render(<MyDocument />, "example.pdf")
+|> Js.Promise.then_(() => Js.Promise.resolve @@ Js.log("Pdf created"));
 ```
